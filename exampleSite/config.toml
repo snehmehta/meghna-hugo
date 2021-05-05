@@ -8,7 +8,7 @@ themesDir = "../.."
 title = "Webvoke"
 [Languages.en]
 contentDir = "content/english"
-copyright = "Copyright &copy; 2020 Webvoke.inc"
+copyright = "Copyright &copy; 2021 Webvoke.inc"
 home = "Home"
 languageCode = "en-us"
 languageName = "En"
@@ -57,10 +57,6 @@ name = "équipe"
 url = "#team"
 weight = 4
 [[Languages.fr.menu.main]]
-name = "tarification"
-url = "#pricing"
-weight = 5
-[[Languages.fr.menu.main]]
 name = "blog"
 url = "#blog"
 weight = 6
@@ -70,9 +66,9 @@ url = "#contact"
 weight = 7
 [params]
 author = ""
-description = "Webvoke agency"
+description = "Webvoke inc"
 google_analytics_id = ""
-logo = "images/logo.jpg"
+logo = "images/Mini-yellow-Logo.png"
 post_share = true
 [params.cookies]
 enable = false
