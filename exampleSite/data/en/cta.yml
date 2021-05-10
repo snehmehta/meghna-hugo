@@ -4,7 +4,7 @@ cta:
   bg_image : "images/backgrounds/bg-yellow-wall.jpg"
   bg_image_webp : "images/backgrounds/bg-yellow-wall.jpg"
   title : "Great Design & Incredible Features"
-  content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur odio impedit incidunt? Omnis accusantium ea reiciendis, fugit commodi nostrum."
+  content : "Uncle Ben"
   button:
     enable : true
     label : "Start a project with us"

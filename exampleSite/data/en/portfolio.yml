@@ -31,7 +31,7 @@ portfolio:
     - name : Bottol Label
       image : images/portfolio/portfolio-4.jpg
       image_webp : images/portfolio/portfolio-4.webp
-      categories : ["photography", "development"]
+      categories : [ "development"]
       content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
       link : "#"
       
@@ -47,7 +47,7 @@ portfolio:
     - name : Tag Design
       image : images/portfolio/portfolio-6.jpg
       image_webp : images/portfolio/portfolio-6.webp
-      categories : ["photography"]
+      categories : ["Machine Learning"]
       content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
       link : "#"
       
@@ -71,6 +71,6 @@ portfolio:
     - name : Tag Design
       image : images/portfolio/portfolio-2.jpg
       image_webp : images/portfolio/portfolio-2.webp
-      categories : ["design", "photography"]
+      categories : ["design", "Machine Learning"]
       content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
       link : "#"

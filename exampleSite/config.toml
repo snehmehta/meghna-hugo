@@ -72,7 +72,7 @@ weight = 7
 author = ""
 description = "Webvoke agency"
 google_analytics_id = ""
-logo = "images/logo.jpg"
+logo = "images/Mini-yellow-Logo.png"
 post_share = true
 [params.cookies]
 enable = false
