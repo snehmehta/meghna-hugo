@@ -4,7 +4,7 @@ cta:
   bg_image : "images/backgrounds/bg-yellow-wall.jpg"
   bg_image_webp : "images/backgrounds/bg-yellow-wall.jpg"
   title : "Great Product comes with Great Design and Development"
-  content : "  Uncle Ben  "
+  content : "  Uncle Ben"
   button:
     enable : true
     label : "Let's make Great Product"

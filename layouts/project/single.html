@@ -1,0 +1,77 @@
+{{ define "main" }}
+
+{{ partial "navigation.html" . }}
+
+{{ partial "productHero.html" . }}
+
+
+<section id="AppFeatures" class="section-block features-style2">
+    <div class="container">
+        <div class="section-header">
+            <h2>Core Features</h2>
+            <p>
+                Efficiently syndicate flexible content via cost effective initiatives completely leverage vertical
+                quality.<br>
+                Turn your mobile visitors into your best customers.
+            </p>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-4">
+
+                {{ with .Params.features }}
+                {{ $len := len .}}
+                {{ range first (div $len 2) . }}
+
+                <div class="feature-block">
+                    <span class="feature-icon">
+                        <img src="images/icons/1.jpg" class="img-fluid" alt="Img" />
+                    </span>
+                    <div class="feature-content">
+                        <h3>{{ .title}}</h3>
+                        <p>{{ .subTitle }}</p>
+                    </div>
+                </div>
+                {{ end }}
+                {{ end }}
+
+
+            </div>
+            <div class="col-md-4">
+                <div class="img-box">
+                    <img src="{{ .Params.image | relURL }}" class="img-fluid" alt="Img" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                {{ with .Params.features }}
+                {{ $len := len .}}
+                {{ range after (div $len 2) . }}
+
+                <div class="feature-block">
+                    <span class="feature-icon">
+                        <img src="images/icons/1.jpg" class="img-fluid" alt="Img" />
+                    </span>
+                    <div class="feature-content">
+                        <h3>{{ .title}}</h3>
+                        <p>{{ .subTitle }}</p>
+                    </div>
+                </div>
+                {{ end }}
+                {{ end }}
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section section-bg">
+    <div class="container">
+        {{.Content}}
+    </div>
+</section>
+
+
+{{ end }}
