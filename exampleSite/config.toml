@@ -92,6 +92,14 @@ link = "plugins/magnific-popup/magnific-popup.css"
 [[params.plugins.css]]
 link = "plugins/slick/slick.css"
 [[params.plugins.css]]
+link = "plugins/ariel/animate.min.css"
+[[params.plugins.css]]
+link = "plugins/ariel/flaticon.css"
+[[params.plugins.css]]
+link = "plugins/ariel/fontawesome.min.css"
+[[params.plugins.css]]
+link = "plugins/ariel/owl.carousel.min.css"
+[[params.plugins.css]]
 link = "https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700&display=swap"
 [[params.plugins.js]]
 link = "plugins/jquery/jquery.min.js"
@@ -107,6 +115,22 @@ link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
 link = "plugins/lazy-load/lozad.min.js"
 [[params.plugins.js]]
 link = "plugins/google-map/map.js"
+[[params.plugins.js]]
+link = "plugins/ariel/owl.carousel.min.js"
+[[params.plugins.js]]
+link = "plugins/ariel/html5shiv.min.js"
+[[params.plugins.js]]
+link = "plugins/ariel/jquery.countdown.min.js"
+[[params.plugins.js]]
+link = "plugins/ariel/lightcase.min.js"
+[[params.plugins.js]]
+link = "plugins/ariel/popper.min.js"
+[[params.plugins.js]]
+link = "plugins/ariel/respond.min.js"
+[[params.plugins.js]]
+link = "plugins/ariel/scrollit.min.js"
+[[params.plugins.js]]
+link = "plugins/ariel/wow.min.js"
 [params.preloader]
 enable = false
 preloader = "images/logo.png"

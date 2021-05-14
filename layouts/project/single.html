@@ -1,0 +1,66 @@
+{{ define "main" }}
+
+{{ partial "navigation.html" . }}
+
+<section class="start_home demo3">
+    <div class="bubbles-animate">
+        <div class="bubble b_one"></div>
+        <!-- <div class="bubble b_two"></div> -->
+        <div class="bubble b_three"></div>
+        <div class="bubble b_four"></div>
+        <div class="bubble b_five"></div>
+        <div class="bubble b_six"></div>
+    </div>
+    <div class="banner_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 start-home-content">
+                    <span> {{ .Params.leading }}</span>
+                    <h1>{{ .Params.title }}</h1>
+                    <p style="color: white;">
+                        {{ range .Params.technology }}
+                        {{ . }},
+                        {{ end }}
+                    </p>
+                    <p>{{ .Params.subTitle }}</p>
+                    <div class="app-button">
+                        <div class="apple-button">
+                            <a href="#">
+                                <div class="slider-button-icon">
+                                    <i class="fab fa-apple" aria-hidden="true"></i>
+                                </div>
+                                <div class="slider-button-title">
+                                    <p>IOS</p>
+                                    <h3>App store</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="google-button">
+                            <a href="#">
+                                <div class="slider-button-icon">
+                                    <i class="fab fa-google-play" aria-hidden="true"></i>
+                                </div>
+                                <div class="slider-button-title">
+                                    <p>Android</p>
+                                    <h3>Google Play</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 start-home-img">
+                    <img class="img-fluid" src="{{ .Params.image | relURL  }}" alt="{{ .Params.image | relURL }}" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-bg">
+    <div class="container">
+        {{.Content}}
+    </div>
+</section>
+
+
+{{ end }}
