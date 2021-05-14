@@ -22,7 +22,24 @@
     color: #77838f;
 }
 .start_home.demo3 .start-home-content .app-button p{
-    color: #fff; 
+    color: #000; 
+}
+
+.start_home.demo3 .start-home-content .app-button a {
+    border: 2px solid yellow;
+    
+}
+.start_home.demo3 .start-home-content .app-button a:hover {
+    background: #fff;
+    border: 2px solid yellow;
+    color: #911ec2;
+}
+.start_home.demo3 .start-home-content .app-button a:hover p {
+    color: #911ec2;
+}
+.start_home.demo3 .start-home-content span{
+    color: black;
+    font-weight: 500;
 }
 
 
@@ -345,6 +362,7 @@
 .apple-button .slider-button-icon {
     padding: 0px 20px 6px 3px;
     float: left;
+    color: black;
 }
 .apple-button .slider-button-icon i {
     font-size: 32px;
@@ -361,13 +379,15 @@
     padding: 0;
     font-size: 11px;
     line-height: 18px;
+    color: #000;
+
 }
 .slider-button-title h3 {
     margin: 0;
     font-size: 14px;
     line-height: 20px;
     text-transform: capitalize;
-    color: #fff;
+    color: #000;
 }
 .google-button {
     width: 180px;
@@ -386,15 +406,95 @@
 .app-button a:hover {
     background: #fff;
     border: 2px solid transparent;
-    color: black;
+    color: #911ec2;
 }
 .app-button a:hover p, .app-button a:hover h3{
-    color: black; 
+    color: #911ec2; 
 }
 
 .start-home-img img{
     animation: floating2 7s infinite;
     -webkit-animation: floating2 7s infinite; 
+}
+
+.home-demo3 #AppFeatures {
+    background: linear-gradient(0deg, #f8f9fb 35%, transparent 100%);
+}
+
+.features-style2 .img-box{
+    text-align: center;
+}
+.features-style2 .feature-block{
+    background: #fff;
+    box-shadow: 0px 0px 29px 6px rgba(154, 161, 171, 0.18);
+    text-align: left;
+    margin-bottom: 50px;
+}
+.features-style2 .feature-block .feature-icon {
+    float: left;
+    margin: 0 20px 0 0;
+}
+.features-style2 .feature-block .feature-content {
+    padding-left: 85px;
+}
+.features-style2 .feature-block .feature-content h3{
+    margin-bottom: 7px;
+}
+.features-style2 .feature-block .feature-content p {
+    margin-bottom: 0;
+}
+
+.feature-block {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.feature-icon {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    display: block;
+    margin: 0 auto 20px auto;
+    font-size: 24px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 65px;
+    z-index: 1;
+}
+.feature-icon.icon-1 {
+    background: #7142f8;
+}
+.feature-icon.icon-2 {
+    background: #ecbf24;
+}
+.feature-icon.icon-3 {
+    background: #fa4c9a;
+}
+.feature-icon.icon-4 {
+    background: #35bfe7;
+}
+.feature-icon.icon-5 {
+    background: #8621c6;
+}
+.feature-icon.icon-6 {
+    background: #5cbd2c;
+}
+.feature-block h3{
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 8px;  
+}
+
+.features-style2 .img-box{
+    text-align: center;
+}
+
+.img-box img {
+    animation: floating2 7s infinite;
+    -webkit-animation: floating2 7s infinite;
+    max-height: 500px;
 }
 
 @keyframes floating2 {
@@ -465,5 +565,10 @@
     }
     .apple-button .slider-button-icon, .google-button .slider-button-icon {
         padding: 0px 10px 6px 3px;
+    }
+    .img-box img {
+        max-height: auto;
+        margin-bottom: 25px;
+        height: auto;
     }
 }
