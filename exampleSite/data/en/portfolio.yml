@@ -10,6 +10,7 @@ portfolio:
       categories : ["App Development"]
       content : Maintaining Trust and integrity in diamond industry.
       link : "/project/dtrust/"
+
       
     # portfolio item loop
     - name : EQuick
@@ -31,7 +32,7 @@ portfolio:
     - name : Bottol Label
       image : images/portfolio/portfolio-4.jpg
       image_webp : images/portfolio/portfolio-4.webp
-      categories : [ "development"]
+      categories : ["development"]
       content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
       link : "#"
       

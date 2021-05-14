@@ -54,7 +54,7 @@
 							{{ if or (eq .link "#") (eq .link "") }}
 							{{ .name }}
 							{{ else }}
-							<a href="{{ .link | safeURL }}">{{ .name }}</a>
+							<a href="{{ `project/` | relLangURL }}{{ .link | urlize }}/">{{ .name }}</a>
 							{{ end }}
 						</h4>
 						<p>{{ .content | markdownify }}</p>
