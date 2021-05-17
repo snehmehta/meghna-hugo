@@ -1,14 +1,14 @@
 ############################### team ############################
 team:
-  enable : true
+  enable : false
   title : Our Team
   team_member :
     # team member loop
-    - name : Abul Mal Muhit
+    - name : Sneh Mehta
       image_webp : images/team/team-1.webp
       image : images/team/team-1.jpg
       designation : CEO/Founder
-      content : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+      content : Can do anything
       social :
         - icon : ti-facebook # themify icon pack : https://themify.me/themify-icons
           link : "#"

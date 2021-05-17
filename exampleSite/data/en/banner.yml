@@ -1,12 +1,10 @@
 ---
 banner:
   enable: true
-  bg_image_webp: "/images/ideatoproduct.png"
-  bg_image: "/images/ideatoproduct.png"
   icon: ''
   title: Let's manifest your idea together.
   content: Idea's are being of other dimension, you are the chosen one
   button:
     enable: true
     label: Let's Manifest
-    link: "#services"
+    link: "#contact"
