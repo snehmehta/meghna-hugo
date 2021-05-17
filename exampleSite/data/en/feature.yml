@@ -1,10 +1,10 @@
 ############################# feature ###################################
 feature:
   enable : true
-  image : images/ideatoproduct.png
-  image_webp : images/ideatoproduct.png
+  image : images/idea2product.png
+  image_webp : images/idea2product.png
   title : We’re one who will help you in your manifestation journay.
-  content : ""
+  content : "Why ? Because, We are ..."
   feature_item : 
       # feature item loop
     - title : Highly Skilled
