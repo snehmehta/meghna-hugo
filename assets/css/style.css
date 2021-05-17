@@ -379,9 +379,7 @@ a:hover {
 .section-bg {
   background: #ffffff;
 }
-.footer-bg {
-  background: #1D2024;
-}
+
 
 .overly {
   position: relative;
@@ -1008,19 +1006,24 @@ a:hover {
   border-left: 1px solid rgba(236, 239, 241, 0.07);
   border-top: 1px solid rgba(236, 239, 241, 0.07);
   margin-bottom: 40px;
-  box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
+  box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(0, 0, 0, 0.7);
 }
 
 .service-block .service-icon {
   margin-bottom: 10px;
   font-size: 50px;
 }
+#services {
+  padding: 200px 0;
+  /* background: linear-gradient(180deg, #f8f9fb 35%, transparent 100%); */
+  position: relative;
+}
 
 /*=================================================================
   Services section 2
 ==================================================================*/
 .service-2 .service-item {
-  border: 1px solid #eee;
+  border: 1px solid yellow;
   margin-bottom: 30px;
   padding: 50px 20px;
   transition: all 0.3s ease 0s;
@@ -1565,12 +1568,17 @@ input#e-mail,
 /*=================================================================
   Footer section
 ==================================================================*/
-.social-icon {
-  padding: 60px 0 35px;
+
+#footer {
+  padding: 2rem;
 }
 
-.social-icon ul {
-  text-align: center;
+.footer-bg {
+  background: #1D2024;
+}
+
+.social-icon {
+  padding: 60px 0 35px;
 }
 
 .social-icon ul li {
@@ -1608,6 +1616,7 @@ input#e-mail,
 .copyright {
   padding: 20px 0;
   color: #fff;
+  text-align: center;
 }
 
 .copyright img {
@@ -2367,3 +2376,7 @@ figcaption {
   backdrop-filter: blur(10px);
   padding: 2rem;
 } /* No .wrapper needed! */
+
+.list-inline-item a {
+  color: blue;
+}

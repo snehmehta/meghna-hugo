@@ -26,9 +26,7 @@
                 {{ range first (div $len 2) . }}
 
                 <div class="feature-block">
-                    <span class="feature-icon">
-                        <img src="images/icons/1.jpg" class="img-fluid" alt="Img" />
-                    </span>
+
                     <div class="feature-content">
                         <h3>{{ .title}}</h3>
                         <p>{{ .subTitle }}</p>
@@ -50,9 +48,7 @@
                 {{ range after (div $len 2) . }}
 
                 <div class="feature-block">
-                    <span class="feature-icon">
-                        <img src="images/icons/1.jpg" class="img-fluid" alt="Img" />
-                    </span>
+
                     <div class="feature-content">
                         <h3>{{ .title}}</h3>
                         <p>{{ .subTitle }}</p>
@@ -88,6 +84,66 @@
             {{ end }}
         </div>
     </div>
+</section>
+
+<section id="reviews" class="section-block" data-scroll-index="7">
+    <div class="shape-top"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="section-header-style2">
+                    <h2>What Our Customer Says!</h2>
+                    <p>
+                        Don't just believe our words. <br>
+                        Check these testimonials from our satisfied customers!
+                    </p>
+                    <div class="review_nav">
+                        <span class="ti-angle-left button_prev"></span>
+                        <span class="ti-angle-right button_next"></span>
+                    </div>
+
+                    <div class="btn-read-more"><a class="btn theme-btn" href="reviews.html">View all reviews</a></div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <!-- Start review items message-->
+                <div class="review-details-content">
+                    <div class="owl-carousel review_details" id="review_details-1">
+
+                        {{ range .Params.reviews }}
+                        <div class="item">
+                            <p>{{ .review }}</p>
+                            <h5>{{ .customer }}</h5>
+                            <h6>{{ .designation }}</h6>
+                        </div>
+                        {{ end }}
+
+                    </div>
+                </div>
+                <!-- End review items message -->
+
+                <!-- Start review items Avatar -->
+                <div class="review-photo-list">
+                    <div class="owl-carousel review_photo" id="review_photo-1">
+                        <!-- Start review item Avatar -->
+
+                        {{ range .Params.reviews }}
+                        <div class="item">
+                            <div class="review_photo_block">
+                                <img src="{{ .image | relURL}}" alt="Img">
+                            </div>
+                        </div>
+                        {{ end }}
+
+                    </div>
+                </div>
+                <!-- End review items Avatar -->
+            </div>
+        </div>
+    </div>
+
+    <div class="review-shape-bottom"></div>
+    <div class="shape-bottom"></div>
 </section>
 
 
