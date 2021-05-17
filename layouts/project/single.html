@@ -66,6 +66,30 @@
     </div>
 </section>
 
+<section id="appScreenshots" class="section-block" data-scroll-index="3">
+    <div class="shape-top"></div>
+    <div class="container">
+        <div class="section-header">
+            <h2>App Screenshots</h2>
+            <p>
+                Efficiently syndicate flexible content via cost effective initiatives completely leverage vertical
+                quality.<br>
+                Turn your mobile visitors into your best customers.
+            </p>
+        </div>
+
+        <div class="list_screen_slide owl-carousel ">
+            {{ range .Params.screenshots }}
+            <div class="item">
+                <a href="{{ . | relURL }}" data-rel="lightcase:gal">
+                    <img src="{{ . | relURL }}" alt="{{ . | relURL }}">
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
 
 <section class="section section-bg">
     <div class="container">

@@ -13,7 +13,7 @@
 			<i class="{{ .icon }}"></i>
 		</div>
 		{{ end }}
-		<h1 style="background-color: rgba(255, 255, 0, 0.508);">{{ .title | markdownify }}</h1>
+		<h1 style="background-color: rgba(255, 255, 0, 0.508); font-size: 4rem;">{{ .title | markdownify }}</h1>
 		<p style="background-color: rgba(255, 255, 0, 0.308)">{{ .content | markdownify }}</p>
 		{{ if .button.enable }}
 		{{ with .button }}

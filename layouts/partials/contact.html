@@ -17,7 +17,7 @@
 			{{"<!-- /section title -->" | safeHTML}}
 
 			{{"<!-- Contact Details -->" | safeHTML}}
-			<div class="contact-info col-lg-6 wow fadeInUp" data-wow-duration="500ms">
+			<div class="contact-info col-lg-5 wow fadeInUp" data-wow-duration="500ms">
 				<h3>{{ .subtitle | markdownify }}</h3>
 				<p> {{ .content | markdownify }} </p>
 
@@ -33,9 +33,33 @@
 				{{ end }}
 			</div>
 
+			<div class="col-lg-7 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+				<div class="contact-shape">
+					<img src="images/backgrounds/contact-form.png" class="img-fluid" alt="Img"/>
+				</div>
+				<div class="contact-form-block">
+					<div class="section-header-style2">
+						<h2>Let's talk about your idea</h2>
+						<p>
+							Check these testimonials from our satisfied customers!
+						</p>
+					</div>
+					<form class="contact-form">
+						<input type="text" class="form-control" placeholder="Your Name" />
+						<input type="email" class="form-control" placeholder="Your Email" />
+						<input type="tel" class="form-control" placeholder="Your Phone" />
+						<textarea  class="form-control" placeholder="Your Message"></textarea>
+						<button class="btn theme-btn">Send Message</button>
+					</form>
+				</div>
+
+			</div>
+
 			{{"<!-- Contact Form -->" | safeHTML}}
 			{{ if .contact_form.enable }}
 			{{ with .contact_form }}
+
+<!-- 			
 			<div class="col-lg-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
 				<form id="contact-form" class="form-meghna" method="post" action="{{ .form_action }}" role="form">
 					<div class="form-group">
@@ -55,7 +79,7 @@
 							value="{{ .submit }}">{{ .submit }}</button>
 					</div>
 				</form>
-			</div>
+			</div> -->
 			{{ end }}
 			{{ else }}
 			<div class="contact-details">

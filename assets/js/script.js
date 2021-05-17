@@ -8,7 +8,8 @@ $(window).on('load', function () {
 
 jQuery(function ($) {
 	"use strict";
-
+    
+    var $window = $(window);
 	/* ========================================================================= */
 	/*	lazy load initialize
 	/* ========================================================================= */
@@ -143,15 +144,7 @@ jQuery(function ($) {
 		counter();
 	});
 	
-    $('.navbar-nav .nav-item .dropdown-item').on("click", function (e) {
-        $('.navbar-collapse').removeClass('show');
-    });
-    $('.navbar-nav .nav-item a').on("click", function (e) {
-        $('.navbar-collapse').removeClass('show');
-    });
-    $('.navbar-toggler').on("click", function (e) {
-        $('.header-area').addClass('sticky');
-    });
+    
     // :: Sticky Active Code
     $window.on('scroll', function () {
         if ($window.scrollTop() > 0) {
@@ -164,16 +157,16 @@ jQuery(function ($) {
     /*======================================
      ScrollIT
      ======================================*/
-    $.scrollIt({
-        upKey: 60, // key code to navigate to the next section
-        downKey: 40, // key code to navigate to the previous section
-        easing: 'linear', // the easing function for animation
-        scrollTime: 600, // how long (in ms) the animation takes
-        activeClass: 'active', // class given to the active nav element
-        onPageChange: null, // function(pageIndex) that is called when page is changed
-        topOffset: -70 // offste (in px) for fixed top navigation
-    }
-    );
+    // $.scrollIt({
+    //     upKey: 60, // key code to navigate to the next section
+    //     downKey: 40, // key code to navigate to the previous section
+    //     easing: 'linear', // the easing function for animation
+    //     scrollTime: 600, // how long (in ms) the animation takes
+    //     activeClass: 'active', // class given to the active nav element
+    //     onPageChange: null, // function(pageIndex) that is called when page is changed
+    //     topOffset: -70 // offste (in px) for fixed top navigation
+    // }
+    // );
 
     /*======================================
      WOW Animation

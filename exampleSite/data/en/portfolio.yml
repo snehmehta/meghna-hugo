@@ -9,7 +9,7 @@ portfolio:
       image_webp : images/blog/dlogo.png
       categories : ["App Development"]
       content : Maintaining Trust and integrity in diamond industry.
-      link : "/project/dtrust/"
+      link : "project/dtrust/"
       
     # portfolio item loop
     - name : EQuick
@@ -17,7 +17,7 @@ portfolio:
       image_webp : images/portfolio/portfolio-2.webp
       categories : ["App Development"]
       content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      link : "/project/equick/"
+      link : "project/equick/"
       
     # portfolio item loop
     - name : Clock Product
@@ -51,26 +51,3 @@ portfolio:
       content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
       link : "#"
       
-    # portfolio item loop
-    - name : Business Card
-      image : images/portfolio/portfolio-7.jpg
-      image_webp : images/portfolio/portfolio-7.webp
-      categories : ["development"]
-      content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      link : "#"
-      
-    # portfolio item loop
-    - name : Stationary App Development
-      image : images/portfolio/portfolio-8.jpg
-      image_webp : images/portfolio/portfolio-8.webp
-      categories : ["App Development", "development"]
-      content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      link : "#"
-      
-    # portfolio item loop
-    - name : Tag App Development
-      image : images/portfolio/portfolio-2.jpg
-      image_webp : images/portfolio/portfolio-2.webp
-      categories : ["App Development", "Machine Learning"]
-      content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      link : "#"
