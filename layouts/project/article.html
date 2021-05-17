@@ -1,0 +1,14 @@
+<article class="col-lg-4 col-md-6 col-12 clearfix wow fadeInUp mb-4" data-wow-duration="500ms">
+    <div class="blog-item">
+        <div class="blog-article style-1">
+            <div class="article-img">
+                <img class="img-fluid lozad" data-src="{{ .Params.Image_webp | absURL }}"
+                    onerror="this.onerror=null;this.src='{{ .Params.image | absURL }}'">
+
+            </div>
+            <article class="article-content">
+                <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+            </article>
+        </div>
+    </div>
+</article>

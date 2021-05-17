@@ -14,7 +14,7 @@ contact:
     info: 'Email: webvoke@gmail.com'
   contact_form:
     enable: true
-    form_action: "#"
+    form_action: "https://formspree.io/f/xjvjyaaj"
     name: Your Name
     email: Your Email
     subject: Subject
