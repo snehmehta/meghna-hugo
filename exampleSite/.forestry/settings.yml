@@ -11,6 +11,7 @@ sections:
   match: exampleSite/content/english/project/**/*
   templates:
   - project
+  - project
 - type: heading
   label: Blog Post
 - type: directory
