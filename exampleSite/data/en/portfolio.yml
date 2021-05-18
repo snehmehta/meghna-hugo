@@ -23,7 +23,7 @@ portfolio:
     - name : Clock Product
       image : images/portfolio/portfolio-3.jpg
       image_webp : images/portfolio/portfolio-3.webp
-      categories : ["App Development", "development"]
+      categories : ["App Development", "design"]
       content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
       link : "#"
       
@@ -31,17 +31,10 @@ portfolio:
     - name : Bottol Label
       image : images/portfolio/portfolio-4.jpg
       image_webp : images/portfolio/portfolio-4.webp
-      categories : ["development"]
+      categories : ["design"]
       content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
       link : "#"
       
-    # portfolio item loop
-    - name : Shopping Bag
-      image : images/portfolio/portfolio-5.jpg
-      image_webp : images/portfolio/portfolio-5.webp
-      categories : ["App Development"]
-      content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      link : "#"
       
     # portfolio item loop
     - name : Tag App Development

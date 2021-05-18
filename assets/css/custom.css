@@ -9,11 +9,8 @@
     color: #ffffff;
 }
 .start_home.demo3 .start-home-content h1{
-    background: yellow;
-    background: -moz-linear-gradient(to right, yellow 2%, #7450fe 82%);
-    background: -webkit-linear-gradient(to right, yellow 2%, #7450fe 82%);
-    background: linear-gradient(to right, yellow 2%, #7450fe 82%);
-    background: linear-gradient(to right, yellow 2%, #7450fe 82%);
+    background: black;
+
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7450fe', endColorstr='yellow',GradientType=1 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1030,6 +1027,7 @@ textarea{
 .feature-img {
     background-color: #353B43;
     position: relative;
+    display: none;
 }
 
 .feature-img img{
@@ -1386,8 +1384,14 @@ textarea{
         padding: 10px 17px;
         font-size: 14px;
     } 
+    .hero-area .block p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 748px) {
     .feature-img {
-        display: none;
+        display: block;
     }
 }
 

@@ -14,7 +14,3 @@ funfacts:
       icon : "ti-archive" 
       count : "10"
     
-    # counter item loop
-    - title : "Cups of Coffee"
-      icon : "ti-cup" 
-      count : "9999999"

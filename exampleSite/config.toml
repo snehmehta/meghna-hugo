@@ -1,4 +1,4 @@
-baseURL = "https://examplesite.com"
+baseURL = "https://webvoke.ml"
 disableLanguages = []
 disqusShortname = ""
 paginate = "6"
@@ -30,45 +30,15 @@ weight = 6
 name = "contact"
 url = "#contact"
 weight = 7
-[Languages.fr]
-contentDir = "content/french"
-copyright = "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)"
-home = "Accueil"
-languageCode = "fr-fr"
-languageName = "Fr"
-weight = 2
-[[Languages.fr.menu.main]]
-name = "sur"
-url = "#about"
-weight = 1
-[[Languages.fr.menu.main]]
-name = "un service"
-url = "#services"
-weight = 2
-[[Languages.fr.menu.main]]
-name = "portefeuille"
-url = "#portfolio"
-weight = 3
-[[Languages.fr.menu.main]]
-name = "équipe"
-url = "#team"
-weight = 4
-[[Languages.fr.menu.main]]
-name = "blog"
-url = "#blog"
-weight = 6
-[[Languages.fr.menu.main]]
-name = "contact"
-url = "#contact"
-weight = 7
+
 [params]
-author = ""
+author = "Sneh Mehta"
 description = "Webvoke inc"
 google_analytics_id = "G-KSHBYKZD4H"
 logo = "images/Mini-yellow-Logo.png"
 post_share = true
 [params.cookies]
-enable = false
+enable = true
 expire_days = 2
 [params.map]
 enable = false

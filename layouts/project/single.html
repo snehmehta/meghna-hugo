@@ -77,7 +77,7 @@
         <div class="list_screen_slide owl-carousel ">
             {{ range .Params.screenshots }}
             <div class="item">
-                <a href="{{ . | relURL }}" data-rel="lightcase:gal">
+                <a href="{{ . | relURL }}" >
                     <img src="{{ . | relURL }}" alt="{{ . | relURL }}">
                 </a>
             </div>
@@ -102,7 +102,7 @@
                         <span class="ti-angle-right button_next"></span>
                     </div>
 
-                    <div class="btn-read-more"><a class="btn theme-btn" href="reviews.html">View all reviews</a></div>
+                    <div class="btn-read-more"><a class="btn theme-btn" href="#">View all reviews</a></div>
                 </div>
             </div>
             <div class="col-md-7">

@@ -3,8 +3,7 @@ contact:
   enable: true
   title: Contact Us
   subtitle: Contact Details
-  content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero,
-    provident.
+  content: 
   contact_list:
   - icon: ti-location-pin
     info: Gujarat, India

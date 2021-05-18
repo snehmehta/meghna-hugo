@@ -4,18 +4,16 @@ service:
   service_item :
          
     # service item loop
-    - name : Apps Development
-      icon : ti-package # themify icon pack : https://themify.me/themify-icons
-      content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
-
-
-    # service item loop
     - name : Graphic Design
       icon : ti-palette # themify icon pack : https://themify.me/themify-icons
-      content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
-      
+      content : UI / UX are one important aspect of any product and with great designer on our ship.
+    
+        # service item loop
+    - name : Application Development
+      icon : ti-package # themify icon pack : https://themify.me/themify-icons
+      content : Mobile, Web, Desktop depending upon nature of solution we are able to develop any medium which maximize the solution impact.
       
     # service item loop
     - name : Machine Learning
       icon : ti-pulse # themify icon pack : https://themify.me/themify-icons
-      content : Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.
+      content : Creating solution with machine learning, to make product smarter, dynamic and humaize.

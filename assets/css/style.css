@@ -154,7 +154,6 @@ a:hover {
 .btn {
   background-color: transparent;
   color: #fff;
-  padding: 10px 30px;
   border-radius: 0;
   transition: all .3s ease-in 0s;
 }
@@ -693,7 +692,6 @@ a:hover {
 
 .about-2 .content-block .media i {
   font-size: 30px;
-  color: yellow;
 }
 
 .about-2 .content-block .media h4 {
@@ -936,7 +934,7 @@ a:hover {
 }
 
 .portfolio-filter .btn.active {
-  border-color: yellow;
+  border-color: black;
 }
 
 .portfolio-block {

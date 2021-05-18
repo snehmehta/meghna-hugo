@@ -3,21 +3,21 @@ feature:
   enable : true
   image : images/idea2product.png
   image_webp : images/idea2product.png
-  title : We’re one who will help you in your journay.
+  title : We’re one who will help you in your journey.
   content : "Why us ? Because, We are ..."
   feature_item : 
       # feature item loop
     - title : Highly Skilled
       icon : ti-world 
-      content : Equipped with new technology and always craving to learn more, our engineer have all skills need for journey.
+      content : Equipped with new technology and always craving to learn more, we have all skills need for journey.
       
       # feature item loop
-    - title : Completely Passionate
+    - title : Highly Passionate
       icon : ti-panel 
-      content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
+      content : We are one with OCD to solve problem that we encouter and 
 
       # feature item loop
     - title : Young and energatic
       icon : ti-stats-up 
-      content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
+      content : Team is in mid 20's, hence are pack with energy.
       
