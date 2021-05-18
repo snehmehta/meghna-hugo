@@ -8,7 +8,7 @@ sections:
   path: ''
   label: Project
   create: all
-  match: "**/*"
+  match: exampleSite/content/english/project/**/*
   templates:
   - project
 - type: heading
