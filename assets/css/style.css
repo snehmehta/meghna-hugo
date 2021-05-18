@@ -299,6 +299,9 @@ a:hover {
   .section {
     padding: 50px 0;
   }
+  .feature-img {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -543,12 +546,19 @@ a:hover {
   }
 }
 
+@media (max-width: 720px) {
+  .hero-area .block p {
+    font-size: 16px;
+  }
+}
+
 .hero-area .block p {
   color: #fff;
   font-size: 20px;
   width: 70%;
   margin: 0 auto;
 }
+
 
 .hero-area .block .btn-transparent {
   margin-top: 40px;
@@ -1281,7 +1291,7 @@ a:hover {
 }
 
 .post-block {
-  background-color: #292F36;
+  background-color: #1d2024;
   margin-bottom: 10px;
 }
 

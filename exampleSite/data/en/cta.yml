@@ -1,8 +1,6 @@
 ############################# call to action ##############################
 cta:
   enable : true
-  bg_image : "images/backgrounds/bg-yellow-wall.jpg"
-  bg_image_webp : "images/backgrounds/bg-yellow-wall.jpg"
   title : "Great Product comes with Great Design and Development"
   content : "  Uncle Ben"
   button:

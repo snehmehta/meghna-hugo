@@ -64,7 +64,7 @@ weight = 7
 [params]
 author = ""
 description = "Webvoke inc"
-google_analytics_id = ""
+google_analytics_id = "G-KSHBYKZD4H"
 logo = "images/Mini-yellow-Logo.png"
 post_share = true
 [params.cookies]

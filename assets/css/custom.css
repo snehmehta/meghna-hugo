@@ -1027,6 +1027,23 @@ textarea{
     display: block;
 }
 
+.feature-img {
+    background-color: #353B43;
+    position: relative;
+}
+
+.feature-img img{
+    background-size: contain;
+    background-position:  center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+
 .circls-features {
     position: absolute;
     top: 58%;
@@ -1368,5 +1385,9 @@ textarea{
     .download-app-style-1 .download-app-sec .dw-app-btns .btn {
         padding: 10px 17px;
         font-size: 14px;
+    } 
+    .feature-img {
+        display: none;
     }
 }
+
