@@ -8,8 +8,9 @@ sections:
   path: ''
   label: Project
   create: all
-  match: "**/*"
+  match: exampleSite/content/english/project/**/*
   templates:
+  - project
   - project
 - type: heading
   label: Blog Post
