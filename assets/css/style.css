@@ -1429,7 +1429,7 @@ a:hover {
 }
 
 .author-about {
-  margin-top: 40px;
+  border-right: 1px dashed #333;
 }
 
 .post-author {
@@ -1521,6 +1521,9 @@ a:hover {
     margin-top: -80px;
     visibility: hidden;
     content: "";
+  }
+  .author-about {
+    border-right: 0px
   }
 }
 
