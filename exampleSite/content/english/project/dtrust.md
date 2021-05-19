@@ -1,7 +1,6 @@
 ---
 title: "DTrust"
 date: 2018-09-12T14:51:12+06:00
-author: Sneh Mehta
 image_webp: images/portfolio/instagram.png
 image: images/portfolio/instagram.png
 title: "DTrust "

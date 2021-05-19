@@ -3,7 +3,6 @@ title: "EQuick"
 leading: "Ecommerce with seller and admin app"
 subTitle: "EQuick is complete ecommerce solution with seller, admin and client app in both android and IOS."
 date: 2018-09-12T14:51:12+06:00
-author: Sneh Mehta
 image_webp: images/portfolio/instagram.png
 image: images/portfolio/instagram.png
 technology: ["Flutter", "Nodejs","Mongodb"]

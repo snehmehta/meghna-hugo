@@ -1,6 +1,6 @@
 baseURL = "https://webvoke.ml"
 disableLanguages = []
-disqusShortname = ""
+disqusShortname = "webvoke"
 paginate = "6"
 summaryLength = "15"
 theme = "meghna-hugo"
