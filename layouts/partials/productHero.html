@@ -20,6 +20,7 @@
                     </p>
                     <p>{{ .Params.subTitle }}</p>
                     <div class="app-button">
+                        {{ if .Params.ios }}
                         <div class="apple-button">
                             <a href="#">
                                 <div class="slider-button-icon">
@@ -31,8 +32,12 @@
                                 </div>
                             </a>
                         </div>
+                        {{ end }}
+                        {{ if .Params.android }}
+                            
+                        
                         <div class="google-button">
-                            <a href="#">
+                            <a href="{{ .Params.android }}">
                                 <div class="slider-button-icon">
                                     <i class="fab fa-google-play" aria-hidden="true"></i>
                                 </div>
@@ -42,6 +47,7 @@
                                 </div>
                             </a>
                         </div>
+                        {{ end }}
                     </div>
                 </div>
                 <div class="col-md-6 start-home-img">
