@@ -16,7 +16,7 @@ portfolio:
       image : images/portfolio/portfolio-2.jpg
       image_webp : images/portfolio/portfolio-2.webp
       categories : ["App Development"]
-      content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      content : EQuick is complete ecommerce solution with seller, admin and client app in both android and IOS.
       link : "project/equick/"
       
     # portfolio item loop

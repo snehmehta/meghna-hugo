@@ -5,10 +5,10 @@ image_webp: images/portfolio/instagram.png
 image: images/portfolio/instagram.png
 title: "DTrust "
 subTitle: "Maintain trust integretity in diamond market, by validating each transaction and continous monitoring. "
-downloadLink: ""
+android: "https://drive.google.com/file/d/1ZB__kpxq6HMkOn4gFNYXGPocNRJDxy-o/view?usp=sharing"
 technology: ["Flutter", "Firebase", "Cloud Functions"]
 features:
-- title: " Look"
+- title: ""
   subTitle: "We provide marketing to businesses digital media."
 - title: "Trendy "
   subTitle: "We provide  to businesses digital media."

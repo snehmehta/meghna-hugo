@@ -3,8 +3,8 @@ title: "EQuick"
 leading: "Ecommerce with seller and admin app"
 subTitle: "EQuick is complete ecommerce solution with seller, admin and client app in both android and IOS."
 date: 2018-09-12T14:51:12+06:00
-image_webp: images/portfolio/instagram.png
-image: images/portfolio/instagram.png
+image_webp: images/equick/iphone.png
+image: images/equick/iphone.png
 technology: ["Flutter", "Nodejs","Mongodb"]
 android: "https://drive.google.com/file/d/1IvZBJ9vODsWs8u3R4YT5C6SQVHWXlhNJ/view?usp=sharing"
 
@@ -22,7 +22,7 @@ features:
 - title: "Admin App"
   subTitle: "From categories, brands, home page layout, seller everything is controlled with companion admin app "
 
-screenshots: ["images/portfolio/phone1.png","images/portfolio/igpost.png"]
+screenshots: ["images/equick/Home Page.png", "images/equick/Shimmer.png", "images/equick/Profile.png","images/equick/Checkout.png","images/equick/Shipping.png", "images/equick/Order.png"]
 
 reviews:
 - review: "Best Team ever worked with, highly motivated and engaged with their work. Really, Please with their work. "
