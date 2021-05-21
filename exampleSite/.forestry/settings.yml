@@ -5,11 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: ''
+  path: exampleSite/content/english/project
   label: Project
   create: documents
-  match: exampleSite/content/english/project
-  exclude: "/**/*"
+  match: "/**/*"
   templates:
   - project
 - type: heading
