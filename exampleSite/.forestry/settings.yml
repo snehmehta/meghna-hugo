@@ -7,10 +7,10 @@ sections:
 - type: directory
   path: ''
   label: Project
-  create: all
-  match: exampleSite/content/english/project/**/*
+  create: documents
+  match: exampleSite/content/english/project
+  exclude: "/**/*"
   templates:
-  - project
   - project
 - type: heading
   label: Blog Post
