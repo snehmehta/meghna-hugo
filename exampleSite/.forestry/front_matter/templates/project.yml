@@ -20,10 +20,7 @@ fields:
 - type: text
   name: description
   label: description
-- name: tech
-  type: blocks
-  label: Tech
-  template_types: []
-  config:
-    min: 
-    max: 
+- name: technology
+  type: tag_list
+  default: []
+  label: Technology

@@ -5,12 +5,11 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: ''
+  path: exampleSite/content/english/project
   label: Project
-  create: all
-  match: exampleSite/content/english/project/**/*
+  create: documents
+  match: "/**/*"
   templates:
-  - project
   - project
 - type: heading
   label: Blog Post
@@ -37,11 +36,6 @@ sections:
   path: exampleSite/data
   label: Homepage
   create: all
-  match: "**/*"
-- type: directory
-  path: exampleSite/i18n
-  label: i18n
-  create: documents
   match: "**/*"
 - type: heading
   label: Configuration
