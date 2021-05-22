@@ -2,18 +2,18 @@
 
 {{ if $data.banner.banner.enable }}
 {{ with $data.banner.banner }}
-{{"<!-- Welcome Slider-->" | safeHTML}}
-<section class="hero-area" >
-	<!-- this image is for trigger this section fallback background image -->
-	<img class="d-none" src="{{ .bg_image_webp | absURL }}" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url({{ .bg_image | absURL }})'"/>
 
+<section  class="hero-area " >
+	<div id="banner">
+
+	</div>
 	<div class="block">
 		{{ if .icon }}
 		<div class="video-button">
 			<i class="{{ .icon }}"></i>
 		</div>
 		{{ end }}
-		<h1>{{ .title | markdownify }}</h1>
+		<h1 class="ml3">{{ .title | markdownify }}</h1>
 		<p >{{ .content | markdownify }}</p>
 		{{ if .button.enable }}
 		{{ with .button }}
@@ -22,6 +22,5 @@
 		{{ end }}
 	</div>
 </section>
-{{"<!-- /Welcome Slider-->" | safeHTML}}
 {{end}}
 {{end}}

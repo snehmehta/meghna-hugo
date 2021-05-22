@@ -3,148 +3,165 @@
 /* ========================================================================= */
 
 $(window).on('load', function () {
-	$('.preloader').fadeOut(100);
+    $('.preloader').fadeOut(100);
 });
 
+
+
+
 jQuery(function ($) {
-	"use strict";
-    
+    "use strict";
+
     var $window = $(window);
-	/* ========================================================================= */
-	/*	lazy load initialize
-	/* ========================================================================= */
+    /* ========================================================================= */
+    /*	lazy load initialize
+    /* ========================================================================= */
 
-	const observer = lozad(); // lazy loads elements with default selector as ".lozad"
-	observer.observe();
+    const observer = lozad(); // lazy loads elements with default selector as ".lozad"
+    observer.observe();
 
-	/* ========================================================================= */
-	/*	Magnific popup
-	/* =========================================================================  */
-	$('.image-popup').magnificPopup({
-		type: 'image',
-		removalDelay: 160, //delay removal by X to allow out-animation
-		callbacks: {
-			beforeOpen: function () {
-				// just a hack that adds mfp-anim class to markup
-				this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
-				this.st.mainClass = this.st.el.attr('data-effect');
-			}
-		},
-		closeOnContentClick: true,
-		midClick: true,
-		fixedContentPos: false,
-		fixedBgPos: true
-	});
+    // var textAnime = document.querySelector('.ml3');
+    // textAnime.innerHTML = textAnime.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-	/* ========================================================================= */
-	/*	Portfolio Filtering Hook
-	/* =========================================================================  */
+    // anime.timeline({ loop: false })
+    //     .add({
+    //         targets: '.ml3 .letter',
+    //         opacity: [0, 1],
+    //         easing: "easeInOutQuad",
+    //         duration: 800,
+    //         delay: (el, i) => 150 * (i + 1)
+    //     });
 
-	var containerEl = document.querySelector('.shuffle-wrapper');
-	if (containerEl) {
-		var Shuffle = window.Shuffle;
-		var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
-			itemSelector: '.shuffle-item',
-			buffer: 1
-		});
-
-		jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
-			var input = evt.currentTarget;
-			if (input.checked) {
-				myShuffle.filter(input.value);
-			}
-		});
-	}
-
-	/* ========================================================================= */
-	/*	Testimonial Carousel
-	/* =========================================================================  */
-
-	$("#testimonials").slick({
-		infinite: true,
-		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 4000
-	});
-
-	/* ========================================================================= */
-	/*	animation scroll js
-	/* ========================================================================= */
-
-
-
-	function myFunction(x) {
-		if (x.matches) {
-			var topOf = 50
-		} else {
-			var topOf = 350
-		}
-	}
-
-	var html_body = $('html, body');
-	$('nav a, .page-scroll').on('click', function () { //use page-scroll class in any HTML tag for scrolling
-		if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			if (target.length) {
-				html_body.animate({
-					scrollTop: target.offset().top - 50
-				}, 1500, 'easeInOutExpo');
-				return false;
-			}
-		}
-	});
-
-	// easeInOutExpo Declaration
-	jQuery.extend(jQuery.easing, {
-		easeInOutExpo: function (x, t, b, c, d) {
-			if (t === 0) {
-				return b;
-			}
-			if (t === d) {
-				return b + c;
-			}
-			if ((t /= d / 2) < 1) {
-				return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
-			}
-			return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
-		}
-	});
-
-	/* ========================================================================= */
-	/*	counter up
-	/* ========================================================================= */
-	function counter() {
-		var oTop;
-		if ($('.count').length !== 0) {
-			oTop = $('.count').offset().top - window.innerHeight;
-		}
-		if ($(window).scrollTop() > oTop) {
-			$('.count').each(function () {
-				var $this = $(this),
-					countTo = $this.attr('data-count');
-				$({
-					countNum: $this.text()
-				}).animate({
-					countNum: countTo
-				}, {
-					duration: 1000,
-					easing: 'swing',
-					step: function () {
-						$this.text(Math.floor(this.countNum));
-					},
-					complete: function () {
-						$this.text(this.countNum);
-					}
-				});
-			});
-		}
-	}
-	$(window).on('scroll', function () {
-		counter();
-	});
-	
     
+
+    /* ========================================================================= */
+    /*	Magnific popup
+    /* =========================================================================  */
+    $('.image-popup').magnificPopup({
+        type: 'image',
+        removalDelay: 160, //delay removal by X to allow out-animation
+        callbacks: {
+            beforeOpen: function () {
+                // just a hack that adds mfp-anim class to markup
+                this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
+                this.st.mainClass = this.st.el.attr('data-effect');
+            }
+        },
+        closeOnContentClick: true,
+        midClick: true,
+        fixedContentPos: false,
+        fixedBgPos: true
+    });
+
+    /* ========================================================================= */
+    /*	Portfolio Filtering Hook
+    /* =========================================================================  */
+
+    var containerEl = document.querySelector('.shuffle-wrapper');
+    if (containerEl) {
+        var Shuffle = window.Shuffle;
+        var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
+            itemSelector: '.shuffle-item',
+            buffer: 1
+        });
+
+        jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
+            var input = evt.currentTarget;
+            if (input.checked) {
+                myShuffle.filter(input.value);
+            }
+        });
+    }
+
+    /* ========================================================================= */
+    /*	Testimonial Carousel
+    /* =========================================================================  */
+
+    $("#testimonials").slick({
+        infinite: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 4000
+    });
+
+    /* ========================================================================= */
+    /*	animation scroll js
+    /* ========================================================================= */
+
+
+
+    function myFunction(x) {
+        if (x.matches) {
+            var topOf = 50
+        } else {
+            var topOf = 350
+        }
+    }
+
+    var html_body = $('html, body');
+    $('nav a, .page-scroll').on('click', function () { //use page-scroll class in any HTML tag for scrolling
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                html_body.animate({
+                    scrollTop: target.offset().top - 50
+                }, 1500, 'easeInOutExpo');
+                return false;
+            }
+        }
+    });
+
+    // easeInOutExpo Declaration
+    jQuery.extend(jQuery.easing, {
+        easeInOutExpo: function (x, t, b, c, d) {
+            if (t === 0) {
+                return b;
+            }
+            if (t === d) {
+                return b + c;
+            }
+            if ((t /= d / 2) < 1) {
+                return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
+            }
+            return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
+        }
+    });
+
+    /* ========================================================================= */
+    /*	counter up
+    /* ========================================================================= */
+    function counter() {
+        var oTop;
+        if ($('.count').length !== 0) {
+            oTop = $('.count').offset().top - window.innerHeight;
+        }
+        if ($(window).scrollTop() > oTop) {
+            $('.count').each(function () {
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
+                $({
+                    countNum: $this.text()
+                }).animate({
+                    countNum: countTo
+                }, {
+                    duration: 1000,
+                    easing: 'swing',
+                    step: function () {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function () {
+                        $this.text(this.countNum);
+                    }
+                });
+            });
+        }
+    }
+    $(window).on('scroll', function () {
+        counter();
+    });
+
+
     // :: Sticky Active Code
     $window.on('scroll', function () {
         if ($window.scrollTop() > 0) {
@@ -381,14 +398,14 @@ jQuery(function ($) {
     if ($('#google-map').length > 0) {
         //set your google maps parameters
         var latitude = 51.5255069,
-                longitude = -0.0836207,
-                map_zoom = 14;
+            longitude = -0.0836207,
+            map_zoom = 14;
 
         //google map custom marker icon 
         var marker_url = 'images/map-marker.png';
 
         //we define here the style of the map
-        var style = [{"featureType": "landscape", "stylers": [{"saturation": -100}, {"lightness": 65}, {"visibility": "on"}]}, {"featureType": "poi", "stylers": [{"saturation": -100}, {"lightness": 51}, {"visibility": "simplified"}]}, {"featureType": "road.highway", "stylers": [{"saturation": -100}, {"visibility": "simplified"}]}, {"featureType": "road.arterial", "stylers": [{"saturation": -100}, {"lightness": 30}, {"visibility": "on"}]}, {"featureType": "road.local", "stylers": [{"saturation": -100}, {"lightness": 40}, {"visibility": "on"}]}, {"featureType": "transit", "stylers": [{"saturation": -100}, {"visibility": "simplified"}]}, {"featureType": "administrative.province", "stylers": [{"visibility": "off"}]}, {"featureType": "water", "elementType": "labels", "stylers": [{"visibility": "on"}, {"lightness": -25}, {"saturation": -100}]}, {"featureType": "water", "elementType": "geometry", "stylers": [{"hue": "#ffff00"}, {"lightness": -25}, {"saturation": -97}]}];
+        var style = [{ "featureType": "landscape", "stylers": [{ "saturation": -100 }, { "lightness": 65 }, { "visibility": "on" }] }, { "featureType": "poi", "stylers": [{ "saturation": -100 }, { "lightness": 51 }, { "visibility": "simplified" }] }, { "featureType": "road.highway", "stylers": [{ "saturation": -100 }, { "visibility": "simplified" }] }, { "featureType": "road.arterial", "stylers": [{ "saturation": -100 }, { "lightness": 30 }, { "visibility": "on" }] }, { "featureType": "road.local", "stylers": [{ "saturation": -100 }, { "lightness": 40 }, { "visibility": "on" }] }, { "featureType": "transit", "stylers": [{ "saturation": -100 }, { "visibility": "simplified" }] }, { "featureType": "administrative.province", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "labels", "stylers": [{ "visibility": "on" }, { "lightness": -25 }, { "saturation": -100 }] }, { "featureType": "water", "elementType": "geometry", "stylers": [{ "hue": "#ffff00" }, { "lightness": -25 }, { "saturation": -97 }] }];
 
         //set google map options
         var map_options = {
@@ -424,10 +441,10 @@ jQuery(function ($) {
     if ($('.defaultCountdown').length > 0) {
         $('.defaultCountdown').countdown('2021/01/01', function (event) {
             $(this).html(event.strftime(''
-                    + '<div class="col-3 col-md-3 counter-item"><span>%D</span> Day%!d</div>'
-                    + '<div class="col-3 col-md-3 counter-item"><span>%H</span> Hours</div>'
-                    + '<div class="col-3 col-md-3 counter-item"><span>%M</span> Mins</div>'
-                    + '<div class="col-3 col-md-3 counter-item"><span>%S</span> Secs</div>'));
+                + '<div class="col-3 col-md-3 counter-item"><span>%D</span> Day%!d</div>'
+                + '<div class="col-3 col-md-3 counter-item"><span>%H</span> Hours</div>'
+                + '<div class="col-3 col-md-3 counter-item"><span>%M</span> Mins</div>'
+                + '<div class="col-3 col-md-3 counter-item"><span>%S</span> Secs</div>'));
         });
     }
 
