@@ -15,13 +15,23 @@
 		{{ end }}
 		<h1 class="ml3">{{ .title | markdownify }}</h1>
 		<p >{{ .content | markdownify }}</p>
+		
+		<div class="row justify-content-center">
 		{{ if .button.enable }}
 		{{ with .button }}
 		<a href="{{ .link }}" class="btn btn-transparent page-scroll">{{ .label }}</a>
 		{{ end }}
 		{{ end }}
+		{{ if .button2.enable }}
+		{{ with .button2 }}
+		<a href="{{ .link }}" class="btn btn-transparent page-scroll">{{ .label }}</a>
+		{{ end }}
+		{{ end }}
+		</div>
+		
 	</div>
 </section>
+
 {{ $script := resources.Get "js/three.min.js" | minify | fingerprint "sha384"}}
 <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
 <script>

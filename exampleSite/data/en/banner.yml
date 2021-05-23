@@ -3,8 +3,12 @@ banner:
   enable: true
   icon: ''
   title: Let's manifest your idea together.
-  content: Idea's are being of other dimension, you are the chosen one
+  # content: Idea's are being of other dimension, you are the chosen one
   button:
     enable: true
     label: Let's Manifest
     link: "#contact"
+  button2:
+    enable: true
+    label: Know More
+    link: "#feature"
