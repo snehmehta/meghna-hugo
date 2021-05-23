@@ -91,11 +91,9 @@ link = "plugins/ariel/popper.min.js"
 [[params.plugins.js]]
 link = "plugins/ariel/respond.min.js"
 [[params.plugins.js]]
-link = "plugins/ariel/scrollit.min.js"
-[[params.plugins.js]]
 link = "plugins/ariel/wow.min.js"
 [params.preloader]
-enable = true
+enable = false
 preloader = "images/Mini-yellow-Logo.png"
 
 [[params.social]]

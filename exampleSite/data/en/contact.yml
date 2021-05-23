@@ -2,7 +2,7 @@
 contact:
   enable: true
   title: Contact Us
-  subtitle: Contact Details
+  subtitle: Details
   content: 
   contact_list:
   - icon: ti-location-pin

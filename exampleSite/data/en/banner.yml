@@ -6,7 +6,7 @@ banner:
   # content: Idea's are being of other dimension, you are the chosen one
   button:
     enable: true
-    label: Let's Manifest
+    label: Contact Us
     link: "#contact"
   button2:
     enable: true
