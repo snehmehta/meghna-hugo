@@ -14,16 +14,20 @@
         <img class="img-fluid mb-50 lozad" data-src="{{ .Params.Image | absURL }}" alt="blog-image">
       </div>
       <div class="col-lg-8 offset-lg-2">
-        <div class="post-single-content">
+        <div class="markdown-body post-single-content">
           {{ .Content }}
         </div>
         {{ if site.Params.post_share }}
         {{ partial "post-share.html" . }}
         {{ end }}
         <!-- comments -->
-        <div class="mt-5">
-          {{ template "_internal/disqus.html" . }}
-        </div>
+        <script src="https://utteranc.es/client.js"
+          repo="snehmehta/webvoke-comment"
+          issue-term="pathname"
+          theme="github-dark"
+          crossorigin="anonymous"
+          async>
+        </script>
       </div>
     </div>
   </div>

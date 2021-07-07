@@ -7,13 +7,16 @@ service:
     - name : Graphic Design
       icon : ti-palette # themify icon pack : https://themify.me/themify-icons
       content : UI / UX are one important aspect of any product and with great designer on our ship.
+      link: graphic
     
-        # service item loop
+      # service item loop
     - name : Application Development
       icon : ti-package # themify icon pack : https://themify.me/themify-icons
       content : Mobile, Web, Desktop depending upon nature of solution we are able to develop any medium which maximize the solution impact.
-      
+      link: app_development
+
     # service item loop
     - name : Machine Learning
       icon : ti-pulse # themify icon pack : https://themify.me/themify-icons
       content : Creating solution with machine learning, to make product smarter, dynamic and humaize.
+      link: machine_learning

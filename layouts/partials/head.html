@@ -23,6 +23,10 @@
 	{{ $custom := resources.Get "css/custom.css" | minify }}
   <link rel="stylesheet" href="{{ $custom.Permalink }}" media="screen">
 
+  {{"<!-- Markdown stylesheet - for your changes -->" |safeHTML}}
+	{{ $markdown := resources.Get "css/markdown.css" | minify }}
+  <link rel="stylesheet" href="{{ $markdown.Permalink }}" media="screen">
+
 	{{ "<!--Favicon-->" | safeHTML }}
 	<link rel="shortcut icon" href="{{ `images/favicon.ico` | absURL }}" type="image/x-icon">
 	<link rel="icon" href="{{ `images/favicon.ico` | absURL }}" type="image/x-icon">

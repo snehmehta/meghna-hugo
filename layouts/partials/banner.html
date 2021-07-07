@@ -30,8 +30,10 @@
 		</div>
 		
 	</div>
-</section>
 
+	
+
+</section>
 {{ $script := resources.Get "js/three.min.js" | minify | fingerprint "sha384"}}
 <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
 <script>

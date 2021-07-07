@@ -1,6 +1,5 @@
 baseURL = "https://webvoke.ml"
 disableLanguages = []
-disqusShortname = "webvoke"
 paginate = "6"
 summaryLength = "15"
 theme = "meghna-hugo"
@@ -37,6 +36,11 @@ description = "Webvoke inc"
 google_analytics_id = "G-KSHBYKZD4H"
 logo = "images/Mini-yellow-Logo.png"
 post_share = true
+typeformid = "u6nTL7" # Required
+typeformuser = "myuser" # Optional
+typeformwidth = "100%" # Optional
+typeformheight = "800px" # Optional
+
 [params.cookies]
 enable = false
 expire_days = 2
@@ -95,6 +99,7 @@ link = "plugins/ariel/wow.min.js"
 [params.preloader]
 enable = false
 preloader = "images/Mini-yellow-Logo.png"
+
 
 [[params.social]]
 icon = "ti-twitter-alt"
